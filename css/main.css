@@ -1,0 +1,492 @@
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-padding-top: 60px;
+}
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+.scrolled {
+    background-color: white !important; 
+}
+
+.scrolled a {
+    color: black !important; 
+}
+
+.scrolled .navbar-nav .nav-link::after,
+.navbar-nav .nav-link.active::after {
+    background: #000;
+}
+
+
+.scrolled .navbar-toggler-icon {
+    background-image: url('../IMG/black_version.svg'); /* Change the icon color to black */
+}
+
+
+.navbar .container .navbar-collapse .navbar-nav li{
+    font-size: 14px;
+    margin: 25px 20px 0;
+}
+.navbar .container .navbar-collapse .navbar-nav li a{
+   padding: 0;
+   color: #fff;
+   position: relative;
+}
+
+.navbar-nav .nav-link::after,
+.navbar-nav .nav-link.active::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fff; 
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    transition: all 0.5s; 
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%; 
+}
+@media (max-width: 991px) {
+    .navbar-collapse.show {
+        background-color: #ffffff;
+        padding: 15px; 
+        border-radius: 0;
+    }
+    .navbar-collapse .nav-link {
+        text-align: center;
+        color: #333 !important; 
+        font-weight: 600; 
+    }
+    
+    .badge-custom {
+        top: 57%;
+    }
+    
+}
+
+
+.logo{
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    color: #fff;
+}
+.Home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../IMG/bg.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+.Home .caption h5 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.Home .caption h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    margin: 0;
+    padding: 10px 0;
+}
+.Home .caption .social-icons a {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+/*about*/
+
+.about .about-img-box::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../IMG/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.fw {
+    font-size: 30px;
+    font-weight: 800 !important;
+}
+.about .about-caption .about-span {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px ;
+}
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.skills{
+    margin-top: 30px;
+}
+.progress{
+    height: 1.5rem !important;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.skills .skills-progress .progress-bar-1::after{
+    content: "95%";
+    position: absolute;
+    right: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+    color: #fff; 
+    font-weight: bold; 
+    z-index: 1; 
+}
+
+.skills .skills-progress .progress-bar-2::after {
+    content: "85%"; 
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: #fff; 
+    font-weight: bold; 
+    z-index: 1;
+}
+.skills .skills-progress .progress-bar-3::after {
+    content: "50%"; 
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: #fff; 
+    font-weight: bold; 
+    z-index: 1; 
+}
+.button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.buton{
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.btn:hover {
+    color: #000 !important;
+    background-color:transparent !important;
+}
+
+.buton:hover{
+    color: #fff !important;
+    background-color:#000 !important;
+}
+/*services*/
+.bg-gray {
+    background: #f7f7f7;
+}
+.text-services{
+    margin-bottom: 80px;
+}
+.text-services h3{
+    font-size: 40px;
+    font-weight: 900;
+    z-index: 4;
+}
+.text-services h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.text-services p {
+    color: #4e4e4e;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.service-card {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.icon-circle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.Services .service-card:hover .icon-circle {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.description {
+    word-spacing: 2px;
+    font-size: 14px;
+}
+/*portfilo*/
+.portfolio-menu {
+    text-align: center; 
+    margin-bottom: 50px; 
+}
+
+.portfolio-menu button {
+    background-color: transparent;
+    border: none; 
+    color: #222;
+    margin: 0 15px;
+    cursor: pointer; 
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+}
+.portfolio-menu button::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.portfolio-menu button.active::before {
+    width: 100%;
+}
+.Portfolio .item{
+    padding: 0 15px;
+    margin-bottom: 30px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.item .overlay {
+    position: absolute; 
+    top: 5px; 
+    left: 20px;
+    right: 20px; 
+    bottom: 5px; 
+    background: #fff; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 1; 
+}
+
+.item:hover .overlay {
+    opacity: 1; 
+}
+.portfolio-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    line-height: 40px;
+    z-index: 2;
+}
+.portfolio-view h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.5s;
+    transform: translateY(-15px);
+}
+.portfolio-view .icons .icon i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+.item:hover .portfolio-view {
+    opacity: 1; 
+}
+/*client*/
+
+.testimonial .carousel-indicators  {
+    margin-bottom: -2rem;
+}
+.testimonial .carousel-inner p{
+    word-spacing: 2px;
+    width: 80%;
+    margin: auto;
+} 
+.testimonial .carousel-inner h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}   
+.testimonial .carousel-inner span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}   
+.testimonial .carousel-indicators [data-bs-target] {
+text-indent: 0;
+background-color: #748182;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+}
+/*counter*/
+.section-counter .ico{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.section-counter .counter-num h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.section-counter .counter-num p{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.section-padding {
+    padding: 100px 0;
+}
+.pb-70 {
+    padding-bottom: 70px !important;
+}
+/*Team*/
+.border-0{
+    border-radius: 0 !important;
+}
+.card-img-bg {
+    background-color: rgba(52, 52, 52, .8);
+    margin-bottom: 10px;
+}
+.card .overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: white;
+    border: #000 solid 2px;
+    color: black;
+}
+
+.card .position-relative:hover .overlay {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+.card .position-relative img {
+    transition: all 0.4s ease 0s;
+}
+
+.card .position-relative:hover img {
+    transform: scale(1.2);
+}
+/*contact*/
+.social-icon-contact{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    color: #1c1c1c;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.social-icon-contact:hover {
+    background-color: black;
+    color:white;
+}
+.contact-info{
+    margin-bottom: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background: #f4f4f4;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+.btn-submit {
+    padding: 10px 40px !important;
+}
+.btn-submit:hover {
+border: #000 solid 1px !important;
+}
+/*footer*/
+footer{
+    background-color: #1c1c1c;
+    padding: 30px;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+}
